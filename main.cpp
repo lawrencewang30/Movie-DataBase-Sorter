@@ -85,17 +85,15 @@ int main(int argc, char** argv){ //argc = number of arguments, argv = each argum
   return 0;
 }
 
-/* Add your run time analysis for part 3 of the assignment here as commented block*/
-
-/* 3a. Time complexity: O(log(n)) + O(n) + O(n) + O(m) = O(n) + O(m) = O(h). Using the worst case scenario,*/
+/* Time complexity: O(log(n)) + O(n) + O(n) + O(m) = O(n) + O(m) = O(h). Using the worst case scenario,*/
 /* we see that linear time is the biggest one. Both O(n) and O(m) use the height of the tree, h,*/
 /* so we end up with O(h) as our time complexity */ 
 
-/* 3b. Space complexity: O(n) + O(m) = O(h). Linear time is the only Big O space complexity used.*/
+/* Space complexity: O(n) + O(m) = O(h). Linear time is the only Big O space complexity used.*/
 /* This is because the worst case scenario is traversing through the depth h of the tree, which then utilizes*/
 /* h amount of data.*/
 
-/* 3c Both my time and space complexities were the same at O(h). Space complexity was easier to calculate since*/
+/* Both my time and space complexities were the same at O(h). Space complexity was easier to calculate since*/
 /* the amount of data used was solely dependent on the height of the tree, which varied. */
 /* Time complexity was a little more complicated because inserting the data was not constant (therefore log(h) time) */
 /* however, the rest of the functions all used O(h) time because the worst cases for them was needing to traverse down */
